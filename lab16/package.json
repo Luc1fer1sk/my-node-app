@@ -1,0 +1,20 @@
+{
+  "name": "lab16",
+  "version": "1.0.0",
+  "description": "Laboratornaya rabota 16 - Express.js",
+  "main": "task1.js",
+  "scripts": {
+    "start:task1": "node task1.js",
+    "start:task2": "node task2.js",
+    "start:task3": "node task3.js",
+    "start:task4": "node task4.js",
+    "start:task5": "node task5.js"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.21.1",
+    "express-rate-limit": "^7.4.1",
+    "jsonwebtoken": "^9.0.2",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
