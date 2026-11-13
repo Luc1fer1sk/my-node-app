@@ -1,0 +1,33 @@
+const args = process.argv.slice(2);
+
+function showHelp() {
+  console.log('Ispolzovanie: my-cli <komanda> [argumenty]');
+  console.log('Dostupnye komandy:');
+  console.log('  greet <imya> - poprivetstvovat polzovatelya');
+  console.log('  info         - vyvesti informaciyu o gruppe');
+}
+
+if (args.length === 0 || args[0] === '--help' || args[0] === '-h') {
+  showHelp();
+  process.exit(0);
+}
+
+const command = args[0];
+
+if (command === 'greet') {
+  const name = args[1] || 'Polzovatel';
+  console.log(`Privet, ${name}! Dobro pozhalovat v CLI-prilozhenie gruppy 477.`);
+  process.exit(0);
+}
+
+if (command === 'info') {
+  console.log('Gruppa: 477');
+  console.log('Student: Ovchinnikov Denis Vladimirovich');
+  console.log('Laboratornaya rabota: No 17');
+  console.log('Data: 2026-11-12');
+  process.exit(0);
+}
+
+console.error(`Oshibka: neizvestnaya komanda "${command}"`);
+console.error('Dlya spravki ispolzuyte: my-cli --help');
+process.exit(1);
