@@ -1,0 +1,9 @@
+node_modules/
+.env
+dist/
+result.json
+output.html
+report.pdf
+config.json
+my-app/
+test-project/
