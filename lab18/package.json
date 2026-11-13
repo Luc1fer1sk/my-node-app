@@ -1,0 +1,13 @@
+{
+  "name": "lab18",
+  "version": "1.0.0",
+  "description": "Laboratornaya rabota 18 - Issledovanie metodov raboty modulya OS",
+  "main": "task1.js",
+  "scripts": {
+    "start:task1": "node task1.js",
+    "start:task2": "node task2.js",
+    "start:task3": "node task3.js",
+    "start:task4": "node task4.js"
+  },
+  "dependencies": {}
+}
