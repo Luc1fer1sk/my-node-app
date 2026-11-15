@@ -1,0 +1,20 @@
+{
+  "name": "lab21",
+  "version": "1.0.0",
+  "description": "Laboratornaya rabota 21 - Potoki v Node.js",
+  "main": "task1.js",
+  "scripts": {
+    "start:task1": "node task1.js",
+    "start:task2": "node task2.js",
+    "start:task3": "node task3.js",
+    "start:task4": "node task4.js",
+    "start:task5": "node task5.js",
+    "stream-readable": "node stream-readable.js",
+    "stream-writable": "node stream-writable.js",
+    "stream-pipe": "node stream-pipe.js",
+    "stream-transform": "node stream-transform.js",
+    "stream-pipeline": "node stream-pipeline.js"
+  },
+  "author": "Denis Ovchinnikov",
+  "license": "ISC"
+}
