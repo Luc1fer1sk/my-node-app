@@ -1,0 +1,22 @@
+{
+  "name": "lab22",
+  "version": "1.0.0",
+  "description": "Lab 22 - MySQL connection methods and DB operations",
+  "main": "index.js",
+  "scripts": {
+    "task1": "node mysql-connect.js",
+    "task2": "node mysql-crud.js",
+    "task3": "node mysql-errors.js",
+    "task4": "node mysql-dao.js",
+    "start": "node task5/app.js",
+    "migrate": "node task5/migrate.js up",
+    "migrate:rollback": "node task5/migrate.js down"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "koa": "^2.14.2",
+    "koa-bodyparser": "^4.4.1",
+    "koa-router": "^12.0.1",
+    "mysql2": "^3.6.5"
+  }
+}
