@@ -1,0 +1,28 @@
+{
+  "name": "lab23",
+  "version": "1.0.0",
+  "description": "Lab 23 - MongoDB methods and operations in Node.js",
+  "main": "task1.js",
+  "scripts": {
+    "start:task1": "node task1.js",
+    "start:task2": "node task2.js",
+    "start:task3": "node task3.js",
+    "start:task4": "node task4.js",
+    "start:task5": "node task5.js",
+    "mongodb-connect": "node mongodb-connect.js",
+    "mongodb-crud": "node mongodb-crud.js",
+    "mongodb-advanced": "node mongodb-advanced.js",
+    "mongodb-transactions": "node mongodb-transactions.js",
+    "start": "node task5/app.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "koa": "^2.15.3",
+    "koa-bodyparser": "^4.4.1",
+    "koa-router": "^12.0.1",
+    "mongodb": "^6.5.0",
+    "ws": "^8.16.0"
+  },
+  "author": "Denis Ovchinnikov",
+  "license": "ISC"
+}
