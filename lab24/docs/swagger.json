@@ -1,0 +1,64 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Lab 24 User Management REST API",
+    "version": "1.0.0",
+    "description": "REST API dlya raboty s polzovatelyami pri pomoshchi MongoDB i Koa.js"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "paths": {
+    "/api/users": {
+      "get": {
+        "summary": "Poluchit spisok polzovateley s paginaciyey",
+        "responses": {
+          "200": { "description": "Uspeshny otvet" }
+        }
+      },
+      "post": {
+        "summary": "Sozdat novogo polzovatelya",
+        "responses": {
+          "201": { "description": "Polzovatel sozdan" },
+          "400": { "description": "Oshibka validacii" },
+          "409": { "description": "Email uzhe sushchestvuet" }
+        }
+      }
+    },
+    "/api/auth/register": {
+      "post": {
+        "summary": "Registraciya polzovatelya",
+        "responses": {
+          "201": { "description": "Uspeshnaya registraciya" }
+        }
+      }
+    },
+    "/api/auth/login": {
+      "post": {
+        "summary": "Avtorizaciya i poluchenie JWT",
+        "responses": {
+          "200": { "description": "Uspeshny vhod" },
+          "401": { "description": "Nevernye dannye" }
+        }
+      }
+    },
+    "/health": {
+      "get": {
+        "summary": "Proverka sostoyaniya servisa",
+        "responses": {
+          "200": { "description": "Servis rabotaet" }
+        }
+      }
+    },
+    "/metrics": {
+      "get": {
+        "summary": "Prometheus metriki",
+        "responses": {
+          "200": { "description": "Tekstovyy format Prometheus" }
+        }
+      }
+    }
+  }
+}
